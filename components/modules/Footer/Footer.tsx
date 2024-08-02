@@ -1,12 +1,16 @@
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react/jsx-tag-spacing */
 /* eslint-disable prettier/prettier */
 import Link from 'next/link'
 import Logo from '@/components/elements/Logo/Logo'
 import { useLang } from '@/hooks/useLang'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import FooterMobileLink from './FooterMobileLink'
+import FooterLinks from './FooterLinks'
 
 const Footer = () => {
   const { lang, translations } = useLang()
+  const isMedia950 = useMediaQuery(950)
   const isMedia640 = useMediaQuery(640)
 
   return (
@@ -26,6 +30,8 @@ const Footer = () => {
               </a>
             </span>
           </div>
+          {!isMedia950 && <FooterLinks />}
+          <div className='q'></div>
           <ul className='list-reset footer__socials'>
             <li className='footer__socials__item'>
               <a
