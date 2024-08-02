@@ -1,13 +1,12 @@
+/* eslint-disable prettier/prettier */
 import Link from 'next/link'
 import Logo from '@/components/elements/Logo/Logo'
 import { useLang } from '@/hooks/useLang'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
-import FooterLinks from './FooterLinks'
 import FooterMobileLink from './FooterMobileLink'
 
 const Footer = () => {
   const { lang, translations } = useLang()
-  const isMedia950 = useMediaQuery(950)
   const isMedia640 = useMediaQuery(640)
 
   return (
@@ -19,30 +18,24 @@ const Footer = () => {
           </div>
           <div className='footer__contacts'>
             <span>
-              <a href='tel:+74999998283'>+7 (499) 999-82-83</a>
+              <a href='tel:+79871724181'>+7 (987) 172-41-81</a>
             </span>
             <span>
-              <a href='mailto:rostelecom.merc@rt.ru'>rostelecom.merc@rt.ru</a>
+              <a href='mailto:alimisakov1998@gmail.com'>
+                alimisakov1998@gmail.com
+              </a>
             </span>
-            {isMedia950 && <FooterLinks />}
           </div>
-          {!isMedia950 && <FooterLinks />}
           <ul className='list-reset footer__socials'>
             <li className='footer__socials__item'>
               <a
-                href='https://t.me/dvejer'
+                href='https://t.me/alim_teens_life'
                 className='footer__socials__item__link'
               />
             </li>
             <li className='footer__socials__item'>
               <a
-                href='https://vk.com'
-                className='footer__socials__item__link'
-              />
-            </li>
-            <li className='footer__socials__item'>
-              <a
-                href='https://youtube.com'
+                href='https://www.youtube.com/@Alim-teen_in_IT/videos'
                 className='footer__socials__item__link'
               />
             </li>

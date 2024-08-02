@@ -77,12 +77,6 @@
   -webkit-mask: url(/img/telegram.svg) no-repeat 50% 50%;
   mask: url(/img/telegram.svg) no-repeat 50% 50%;
 }
-
-.footer__socials__item:nth-child(2) .footer__socials__item__link::before {
-  -webkit-mask: url(/img/vk.svg) no-repeat 50% 50%;
-  mask: url(/img/vk.svg) no-repeat 50% 50%;
-}
-
 .footer__socials__item:last-child .footer__socials__item__link::before {
   -webkit-mask: url(/img/ytb.svg) no-repeat 50% 50%;
   mask: url(/img/ytb.svg) no-repeat 50% 50%;
