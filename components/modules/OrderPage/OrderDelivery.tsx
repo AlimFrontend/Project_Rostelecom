@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 'use client'
@@ -249,9 +251,8 @@ const OrderDelivery = () => {
             )}
             {shouldShowCourierAddressData &&
               !!chosenCourierAddressData.address_line1 && (
-            // eslint-disable-next-line indent
                 <CourierAddressInfo />
-            )}
+              )}
           </motion.div>
         )}
       </div>
