@@ -3,7 +3,7 @@ const FooterLinks = () => (
   <div className='footer__links'>
     <span>
       <a href='https://github.com/AlimFrontend/Project_Rostelecom'>
-        github.com
+        sourse code
       </a>
     </span>
   </div>
